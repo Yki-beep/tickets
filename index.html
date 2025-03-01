@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ticket reservation</title>
+</head>
+
+<body>
+    <header>
+        <h1>Event of the year: Concert in your city!</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">about</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#contact">contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <main id="main-content">
+        <section id="about">
+            <h2>About event</h2>
+            <p>Join an unforgettable concert with the stars of the Ukrainian stage. This is an event that you can't
+                miss! Enjoy live music, an incredible atmosphere and a good mood.</p>
+            <p><strong>Дата:</strong> 25 березня 2025 року</p>
+            <p><strong>Micцe:</strong> Концертна зала "Україна", м. Київ</p>
+        </section>
+
+        <section id="tickets">
+            <h2>Tickets</h2>
+            <p>Select your ticket type and fill out the booking form:</p>
+            <form action="/submit-ticket" method="post">
+
+                <select id="ticket-type" name="ticket-type" required>
+                    <option value="standard">Standard - 500 грн</option>
+                    <option value="vip">VIP - 1000 грн</option>
+                </select>
+
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your email</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+                <label for="phone">Your phone number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+380123456789" required>
+                <button type="submit">Book</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>contacts</h2>
+            <p>Contact us if you have any questions:</p>
+            <address>
+                <p>Email: <a href="mailto:info@tickets.ua">info@tickets.ua</a></p>
+                <p>Phole: <a href="tel:+380987654321">+380 98 765 4321</a></p>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ticket reservation. All rights reserved</p>
+    </footer>
+</body>
+
+</html>
